@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Welcome to the Leukemia Prediction App</h2>
+<p>Upload an image of a cell to predict if it's leukemia or not using our AI model.</p>
+<a href="{{ url_for('main.upload') }}">Get Started</a>
+{% endblock %}

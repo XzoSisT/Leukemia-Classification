@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Upload Image{% endblock %}
+
+{% block content %}
+<h2>Upload Image for Prediction</h2>
+<form action="{{ url_for('main.predict') }}" method="post" enctype="multipart/form-data">
+  <input type="file" name="file" accept="image/*" required>
+  <button type="submit">Predict</button>
+</form>
+<div id="result">
+  {% if prediction %}
+    <h3>Prediction Result</h3>
+    <p>Class: {{ prediction.class }}</p>
+    <p>Probability: {{ prediction.probability }}</p>
+  {% endif %}
+</div>
+{% endblock %}
