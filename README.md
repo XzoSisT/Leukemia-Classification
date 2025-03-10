@@ -24,3 +24,5 @@ Clone this repository from GitHub to your local machine using the following comm
 git clone https://github.com/YourUsername/Leukemia-Classification.git
 cd Leukemia-Classification
 
+```bash
+pip install -r requirements.txt
