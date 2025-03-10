@@ -9,3 +9,8 @@ This project is a deep learning-based application for leukemia classification us
 - **Progress Bar**: Displays the confidence level of the prediction.
 - **Interactive UI**: A simple, user-friendly web interface built with Flask.
 - **Advanced Deep Learning**: Utilizes TensorFlow and pre-trained EfficientNetV2 for image classification.
+
+---
+
+🧰 Installation from GitHub
+Clone the Repository: Open a terminal and run the following command:
