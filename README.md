@@ -12,5 +12,5 @@ This project is a deep learning-based application for leukemia classification us
 
 ---
 
-🧰 Installation from GitHub
+## 🧰 Installation from GitHub
 Clone the Repository: Open a terminal and run the following command:
