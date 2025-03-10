@@ -25,7 +25,7 @@ In total there are 15,135 images from 118 patients with two labelled classes:
 ---
 ## Technology used
 - **Programming Languages**: Python
-- **Deep Learning Framework**: TensorFlow 2.11
+- **Deep Learning Framework**: TensorFlow 2.9.2
 - **Web Framework**: Flask
 - **Data Visualization**: Matplotlib, Seaborn
 - **Image Processing**: OpenCV, PIL
