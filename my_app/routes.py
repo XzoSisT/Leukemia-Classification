@@ -1,6 +1,7 @@
-from flask import Blueprint, render_template, request, redirect, url_for, jsonify
-from .utils import process_image
+from flask import Blueprint, render_template, request, jsonify
+from .utils import process_image  # Import the corrected function
 
+# Create Blueprint
 main = Blueprint('main', __name__)
 
 @main.route('/')
@@ -16,9 +17,7 @@ def predict():
     if 'file' not in request.files:
         return jsonify({"error": "No file uploaded"}), 400
 
-    try:
-        file = request.files['file']  # รับไฟล์จากฟอร์ม
-        result = process_image(file)  # ส่งไฟล์ไปยังฟังก์ชัน process_image
-        return jsonify(result)
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    file = request.files['file']
+    result = process_image(file)
+    return render_template('upload.html', prediction=result)
+

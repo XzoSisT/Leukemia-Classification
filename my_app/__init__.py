@@ -1,19 +1,19 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-# สร้าง SQLAlchemy instance
+# Create SQLAlchemy instance
 db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
 
-    # โหลดการตั้งค่าจากไฟล์ config
+    # Load configurations from config file
     app.config.from_pyfile('instance/config.py')
 
-    # เริ่มต้นฐานข้อมูล
+    # Initialize the database
     db.init_app(app)
 
-    # ลงทะเบียน Blueprint
+    # Register Blueprint
     from .routes import main
     app.register_blueprint(main)
 

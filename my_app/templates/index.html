@@ -1,9 +1,75 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}หน้าหลัก - ตรวจจับมะเร็งเม็ดเลือดขาวด้วย AI{% endblock %}
 
 {% block content %}
-<h2>Welcome to the Leukemia Prediction App</h2>
-<p>Upload an image of a cell to predict if it's leukemia or not using our AI model.</p>
-<a href="{{ url_for('main.upload') }}">Get Started</a>
+<div class="text-center mb-5">
+  <h1 class="display-4 mb-4">Leukemia Classification</h1>
+  <p class="lead">
+    นี่คือโปรเจกต์เล็ก ๆ สำหรับวิชา Machine Learning<br>
+    เว็บแอปนี้ใช้เทคโนโลยี deep learning ในการตรวจจับเซลล์มะเร็งเม็ดเลือดขาวเฉียบพลันชนิดลิมโฟบลาสติก (ALL) <br>
+    ซึ่งเป็นมะเร็งในวัยเด็กที่พบบ่อยที่สุด คิดเป็นประมาณ 25% ของมะเร็งในเด็ก
+  </p>
+</div>
+
+<div class="container">
+  <div class="row g-4">
+    <!-- Card สำหรับภาพรวมของโครงการ -->
+    <div class="col-lg-6 col-md-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">ภาพรวมโครงการ</h5>
+          <p class="card-text flex-grow-1">
+            โครงการนี้มุ่งหวังที่จะทำนายว่าภาพเซลล์ที่นำเข้ามามีสัญญาณของมะเร็ง (ALL) หรือไม่ (HEM)
+            โดยใช้โมเดล deep learning ที่ได้รับการฝึกจากชุดข้อมูลภาพทางการแพทย์
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card สำหรับเทคโนโลยีที่ใช้ -->
+    <div class="col-lg-6 col-md-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">เครื่องมือที่ใช้</h5>
+          <ul class="list-unstyled flex-grow-1">
+            <li>- Python, TensorFlow</li>
+            <li>- Flask สำหรับ API และเว็บเซิร์ฟ</li>
+            <li>- Bootstrap 5 สำหรับออกแบบ responsive</li>
+            <li>- Pillow สำหรับประมวลผลภาพ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4 mt-4">
+    <!-- Card สำหรับวิธีการใช้งาน -->
+    <div class="col-lg-6 col-md-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">วิธีการใช้งาน</h5>
+          <ol class="ps-3 flex-grow-1">
+            <li>คลิกที่เมนู "Upload" หรือปุ่ม "อัปโหลด"</li>
+            <li>เลือกไฟล์ภาพเซลล์ (รองรับ JPEG/PNG)</li>
+            <li>กดปุ่ม Submit แล้วรอการแสดงผลการทำนาย</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Card สำหรับข้อจำกัด -->
+    <div class="col-lg-6 col-md-6">
+      <div class="card shadow-sm h-100">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">ข้อจำกัด</h5>
+          <p class="card-text flex-grow-1">
+            โปรดทราบว่าเว็บแอปนี้ถูกพัฒนาขึ้นเพื่อการศึกษาและทดลองเท่านั้น<br>
+            ผลลัพธ์ที่แสดงเป็นลักษณะทางทดลองและไม่สามารถใช้เป็นพื้นฐานสำหรับการวินิจฉัยทางการแพทย์จริงได้
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
