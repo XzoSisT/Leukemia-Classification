@@ -25,6 +25,7 @@ git clone https://github.com/YourUsername/Leukemia-Classification.git
 cd Leukemia-Classification
 
 ```
+## 2️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
