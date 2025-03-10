@@ -33,3 +33,8 @@ Start the Flask server by running:
 ```bash
 python run.py
 ```
+## 4️⃣ Open the Web Interface
+Once the server is running, navigate to the following URL in your web browser:
+```bash
+http://127.0.0.1:5000/
+```
