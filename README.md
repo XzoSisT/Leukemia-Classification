@@ -12,5 +12,15 @@ This project is a deep learning-based application for leukemia classification us
 
 ---
 
-## 🧰 Installation from GitHub
-Clone the Repository: Open a terminal and run the following command:
+# How to Run Leukemia Classification Project
+
+Follow these steps to set up and run the project locally:
+
+---
+
+## 1️⃣ Clone the Repository
+Clone this repository from GitHub to your local machine using the following commands:
+```bash
+git clone https://github.com/YourUsername/Leukemia-Classification.git
+cd Leukemia-Classification
+
