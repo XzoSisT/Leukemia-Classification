@@ -22,7 +22,14 @@ In total there are 15,135 images from 118 patients with two labelled classes:
 - **Progress Bar**: Displays the confidence level of the prediction.
 - **Interactive UI**: A simple, user-friendly web interface built with Flask.
 - **Advanced Deep Learning**: Utilizes TensorFlow and pre-trained EfficientNetV2 for image classification.
-
+---
+## Technology used
+- **Programming Languages**: Python
+- **Deep Learning Framework**: TensorFlow 2.11
+- **Web Framework**: Flask
+- **Data Visualization**: Matplotlib, Seaborn
+- **Image Processing**: OpenCV, PIL
+- **Machine Learning Utilities**: scikit-learn
 ---
 ## Model Architecture
 ```bash
