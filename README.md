@@ -3,6 +3,9 @@
 This project is a deep learning-based application for leukemia classification using microscopic images. The system detects and classifies cells as "HEM" (normal) or "ALL" (leukemia) with high accuracy, based on EfficientNetV2.
 
 ---
+## Dataset
+[Dataset Link](https://www.kaggle.com/datasets/andrewmvd/leukemia-classification)
+---
 
 ## 🌟 Features
 - **Image Prediction**: Upload cell images to classify them as leukemia or normal.
@@ -11,7 +14,31 @@ This project is a deep learning-based application for leukemia classification us
 - **Advanced Deep Learning**: Utilizes TensorFlow and pre-trained EfficientNetV2 for image classification.
 
 ---
-
+## Model Architecture
+```bash
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ efficientnetv2-b3 (Function  (None, 1536)             12930622  
+ al)                                                             
+                                                                 
+ batch_normalization (BatchN  (None, 1536)             6144      
+ ormalization)                                                   
+                                                                 
+ dense (Dense)               (None, 256)               393472    
+                                                                 
+ dropout (Dropout)           (None, 256)               0         
+                                                                 
+ dense_1 (Dense)             (None, 2)                 514       
+                                                                 
+=================================================================
+Total params: 13,330,752
+Trainable params: 13,218,464
+Non-trainable params: 112,288
+_________________________________________________________________
+```
+---
 # How to Run Leukemia Classification Project
 
 Follow these steps to set up and run the project locally:
