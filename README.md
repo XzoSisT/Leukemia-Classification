@@ -16,8 +16,6 @@ This project is a deep learning-based application for leukemia classification us
 
 Follow these steps to set up and run the project locally:
 
----
-
 ## 1️⃣ Clone the Repository
 Clone this repository from GitHub to your local machine using the following commands:
 ```bash
@@ -26,6 +24,12 @@ cd Leukemia-Classification
 
 ```
 ## 2️⃣ Install Dependencies
+Install the required Python packages for the project:
 ```bash
 pip install -r requirements.txt
+```
+## 3️⃣ Run the Web Application
+Start the Flask server by running:
+```bash
+python run.py
 ```
