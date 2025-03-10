@@ -1,0 +1,9 @@
+flask
+flask_sqlalchemy
+pillow
+opencv-python
+scikit-learn
+tenserflow==2.9.2
+seaborn
+matplotlib
+pandas
