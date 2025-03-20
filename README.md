@@ -89,4 +89,7 @@ http://127.0.0.1:5000/
 ![image](https://github.com/user-attachments/assets/beb3e64d-1d38-428c-9d8d-12ad141c4fe4)
 ---
 ## Future Work
-
+# 1. Advanced Preprocessing Techniques:
+ - Implement segmentation algorithms, such as Watershed, U-Net, or Mask R-CNN, to separate individual cells (red blood cells, white blood cells, and platelets) from microscope images.
+ - Develop classification or object detection mechanisms to accurately differentiate cell types in the images.
+ - Normalize image attributes, such as brightness, contrast, and size, to ensure uniformity and improve model performance.
