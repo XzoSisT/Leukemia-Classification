@@ -85,6 +85,9 @@ http://127.0.0.1:5000/
 ---
 ## Preview Web App
 ![image](https://github.com/user-attachments/assets/5d276ad2-11d3-443e-aa5a-db88ca1f342d)
+---
+## Future Work
+
 ![image](https://github.com/user-attachments/assets/14c8f334-1141-44f9-96a2-3514f4988503)
 ![image](https://github.com/user-attachments/assets/beb3e64d-1d38-428c-9d8d-12ad141c4fe4)
 
