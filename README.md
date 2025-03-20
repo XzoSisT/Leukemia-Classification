@@ -89,7 +89,22 @@ http://127.0.0.1:5000/
 ![image](https://github.com/user-attachments/assets/beb3e64d-1d38-428c-9d8d-12ad141c4fe4)
 ---
 ## Future Work
-# 1. Advanced Preprocessing Techniques:
+### 1. Advanced Preprocessing Techniques:
  - Implement segmentation algorithms, such as Watershed, U-Net, or Mask R-CNN, to separate individual cells (red blood cells, white blood cells, and platelets) from microscope images.
  - Develop classification or object detection mechanisms to accurately differentiate cell types in the images.
  - Normalize image attributes, such as brightness, contrast, and size, to ensure uniformity and improve model performance.
+### 2. Integration of Multi-task Learning: 
+- Extend the model's capability to support multiple tasks simultaneously, such as cell classification and morphological analysis of white blood cells.
+- Utilize shared backbones (e.g., EfficientNet, ResNet) to extract shared features for downstream tasks, optimizing the model's efficiency.
+### 3. Incorporation of Morphological Analysis:
+- Extract and utilize morphological features, such as cell size, nuclear shape, symmetry, and irregularities, to provide deeper insights into cellular abnormalities.
+- Apply image augmentation techniques to diversify the dataset and improve the model's robustness against variations in microscopic imaging.
+- Enable classification of specific subtypes of white blood cells (e.g., lymphocytes, neutrophils, monocytes) to better align predictions with specific diseases.
+### 4. Development of Comprehensive Datasets:
+- Construct a dataset with diverse examples, including images from patients with various disease stages and multiple staining techniques.
+- Annotate additional features in the dataset, such as cell type proportions, abnormal shapes, and specific cellular irregularities, to enrich the model's training and evaluation data.
+### 5. Implementation of Quantitative Analysis Modules:
+- Create submodules for analyzing the quantity and proportions of red blood cells, white blood cells, and platelets in a given image.
+- Integrate statistical approaches (e.g., histograms and density analysis) to provide more comprehensive diagnostic information.
+### 6. Evaluation and Optimization:
+- Optimize the model based on metrics such as precision, recall, and F1-score to evaluate its effectiveness and reliability.
